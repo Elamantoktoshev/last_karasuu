@@ -1,14 +1,20 @@
 from django.contrib import admin
-from .models import Ads
+# from .models import AdsKarasuu
 
 
-class AdsAdm(admin.ModelAdmin):
-    list_display = ('id', 'ad_client', 'ad_discription',
-                    'ad_number', 'ad_social', 'ad_dt')
-    list_display_links = ('id', 'ad_client')
-    search_fields = ('ad_client', 'ad_discription',
-                     'ad_number', 'ad_social', 'ad_dt')
-    list_editable = ('ad_social', 'ad_number')
+# class KarasuuAdm(admin.ModelAdmin):
+#     list_display = ('id', 'client_name', 'discription',
+#                     'number', 'social', 'dt')
+#     list_display_links = ('id', 'client_name')
+#     search_fields = ('client_name', 'discription',
+#                      'number', 'social', 'dt')
+#     list_editable = ('social', 'number')
 
-    # Register your models here.
-admin.site.register(Ads, AdsAdm)
+
+# class BookAmd(admin.ModelAdmin):
+#     list_display = ('title')
+#     list_display_links = ('id', 'title')
+#     list_editable = ('title')
+
+# Register your models here.
+# admin.site.register(AdsKarasuu)

@@ -1,8 +1,8 @@
-from django.contrib import admin
-from django.urls import path
-from ads_api.views import ads_list
+# from django.contrib import admin
+# from django.urls import path
+# from ads_api.views import AdsApiView
 
 
-urlpatterns = [
-    path('list/', ads_list)
-]
+# urlpatterns = [
+#     path('list/', AdsApiView)
+# ]

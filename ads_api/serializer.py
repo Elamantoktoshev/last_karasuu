@@ -3,9 +3,12 @@ from rest_framework import serializers
 
 
 class AdsSerializers(serializers.Serializer):
-    ad_image = serializers.ImageField()
-    ad_client = serializers.CharField()
-    ad_discription = serializers.CharField()
-    ad_number = serializers.CharField()
-    ad_social = serializers.CharField()
-    ad_dt = serializers.DateTimeField()
+    id = serializers.IntegerField(label="id")
+    # title = serializers.CharField(label="title")
+    # author = serializers.CharField(label="author")
+    ad_image = serializers.ImageField(label="Фото")
+    client_name = serializers.CharField(label="Имя клиента")
+    discription = serializers.CharField(label="Описания")
+    number = serializers.CharField(label="Номер клиент")
+    social = serializers.CharField(label="Соц. сет")
+    dt = serializers.DateTimeField(label="Дата")
