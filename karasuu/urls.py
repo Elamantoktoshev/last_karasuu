@@ -15,8 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+# from django.urls import url
 from ads_api import views
-from ads_api.views import AdsApiView
 
 
 urlpatterns = [
