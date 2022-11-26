@@ -17,6 +17,10 @@ from django.contrib import admin
 from django.urls import path
 # from django.urls import url
 from ads_api import views
+from config import settings
+from django.conf.urls.static import static
+
+
 
 
 urlpatterns = [
@@ -25,3 +29,6 @@ urlpatterns = [
     path('list/', views.AdsApiView.as_view())
 
 ]
+if settings.DEBUG:
+    '''Если это тестовый режим'''
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
